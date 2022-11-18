@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1D1D"
+    android:textAlignment="center"
+    tools:context=".AddNewPOIs">
+
+    <EditText
+        android:id="@+id/titleInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="201dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Title"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/categoryLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/descriptionInput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="61dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Description"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/addNew2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/addNew2"
+        android:layout_width="203dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#80E30E"
+        android:onClick="addNew2"
+        android:text="Add New"
+        android:textColor="#4A0101"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionInput"
+        app:strokeColor="#048009"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:shadowColor="#2B2A2A"
+        android:text="Add a New POI"
+        android:textColor="#DAD8D8"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/categoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Category"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleInput" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="255dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
