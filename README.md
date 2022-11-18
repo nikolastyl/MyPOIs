@@ -2,7 +2,7 @@
 
 Android App
 
-It gets smartphone's current location and saves it in a localhost database.
+Gets smartphone's current location and saves it in a localhost database.
 
 Add New √
 
